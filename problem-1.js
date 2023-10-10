@@ -5,25 +5,25 @@ class Calculation{
         this.str = str;
     }
     calculate(){
-        if(this.str == 'add'){
-          return this.a+this.b;
+        if(this.str == 'addition'){
+          return this.a +this.b;
         }
-        else if(this.str == 'sub'){
-          return this.a-this.b;
+        else if(this.str == 'subtraction'){
+          return this.a - this.b;
         }
-        else if(this.str == 'mul'){
+        else if(this.str == 'multiply'){
           return this.a*this.b;
         }
-        else if(this.str == 'div'){
+        else if(this.str == 'division'){
           return this.a/this.b;
         }
     }
 }
 
-const add = new Calculation(1,2,'add')
-const subtract = new Calculation(5,1,'sub')
-const multiply = new Calculation(3,4,'mul')
-const division = new Calculation(8,2,'sub')
+const add = new Calculation(1,2,'addition')
+const subtract = new Calculation(7,2,'subtraction')
+const multiply = new Calculation(3,4,'multiply')
+const division = new Calculation(8,2,'division')
 console.log(add.calculate());
 console.log(subtract.calculate());
 console.log(multiply.calculate());
